@@ -49,5 +49,41 @@ public class Main{   // начало объявления класса Program
         System.out.println(x);  // 123456
         System.out.println(y);  // 234567789
         System.out.println("Hello Java!");     // вывод строки на консоль
+
+        int j = 7;
+        for (int i = 0; i < 10; i++){
+            if (i == 5)
+                continue;
+            System.out.println(i);
+        }
+
+        int[] nums2;
+        int[] nums = new int[4];
+// устанавливаем значения элементов массива
+        nums[0] = 1;
+        nums[1] = 2;
+        nums[2] = 4;
+        nums[3] = 100;
+
+// получаем значение третьего элемента массива
+        System.out.println(nums[2]);    // 4
+        int[][] nums3 = new int[][]
+                {
+                        {1, 2, 3},
+                        {4, 5, 6},
+                        {7, 8, 9}
+                };
+        int[] num5 = new int[]{ 1,2,3,4,5};
+        int[][] nums6 = new int[3][];
+        nums6[0] = new int[2];
+        nums6[1] = new int[3];
+        nums6[2] = new int[5];
+        for (int i = 0; i < nums6.length; i++){
+            for(int zj=0; zj < nums6[i].length; zj++){
+
+                System.out.printf("%d ", nums6[i][zj]);
+            }
+            System.out.print("\n");
+        }
     }   // конец объявления нового метода
 } // конец объявления класса Program
