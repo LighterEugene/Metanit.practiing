@@ -1,4 +1,4 @@
-package com.company;
+package study;
 
 public class ContitionalExpression {
     int a = 10;

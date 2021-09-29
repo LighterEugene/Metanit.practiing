@@ -1,4 +1,4 @@
-package com.company;
+package study;
 
 public class methods {
     public static void main (String args[]){

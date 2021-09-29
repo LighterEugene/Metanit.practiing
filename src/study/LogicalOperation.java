@@ -1,4 +1,4 @@
-package com.company;
+package study;
 
 public class LogicalOperation {
     public static void main(String[] args) {
