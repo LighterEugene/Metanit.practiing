@@ -1,6 +1,8 @@
 package ContinuingStudy;
 
 import java.io.ByteArrayOutputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class InputOutputStreamsFourth {
     public static void main(String[] args) {
@@ -25,6 +27,15 @@ public class InputOutputStreamsFourth {
             System.out.print((char)b);
         }
         System.out.println();
+        try(FileOutputStream fos = new FileOutputStream("hello.txt")){
+
+            baos.writeTo(fos);
+        }
+        catch( IOException e){
+
+            System.out.println(e.getMessage());
+        }
     }
+
 }
 
