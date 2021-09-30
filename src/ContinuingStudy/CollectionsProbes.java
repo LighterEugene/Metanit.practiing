@@ -39,6 +39,7 @@ public class CollectionsProbes {
         for(Object person : peopleArray){
 
             System.out.println(person);
+            System.out.println("this");
         }
     }
 }

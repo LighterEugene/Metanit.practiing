@@ -12,13 +12,13 @@ public class AbstractClasses {
         System.out.println(bob.getClass());
     }
 }
-abstract class Person {
+abstract class Person2 {
 
     private String name;
 
     public String getName() { return name; }
 
-    public Person(String name){
+    public Person2(String name){
 
         this.name=name;
     }
@@ -26,7 +26,7 @@ abstract class Person {
     public abstract void display();
 }
 
-class Employee extends Person{
+class Employee extends Person2{
 
     private String bank;
 
@@ -42,7 +42,7 @@ class Employee extends Person{
     }
 }
 
-class Client extends Person {
+class Client extends Person2 {
     private String bank;
     public Client(String name,String company){
         super(name);
