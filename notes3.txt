@@ -1,3 +1,2 @@
-Hello World!Welcome to Java!
-Name: Tom Age: 34 
-PrintStream
+Hello Gold!
+E
