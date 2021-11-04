@@ -43,13 +43,13 @@ class Store{
 // класс Производитель
 class Producer implements Runnable{
 
-    Store store;
+    Store Store;
     Producer(Store store){
-        this.store=store;
+        this.Store=store;
     }
     public void run(){
         for (int i = 1; i < 6; i++) {
-            store.put();
+            Store.put();
         }
     }
 }
@@ -58,7 +58,7 @@ class Consumer implements Runnable{
 
     Store store;
     Consumer(Store store){
-        this.store=store;
+        this.store =store;
     }
     public void run(){
         for (int i = 1; i < 6; i++) {
